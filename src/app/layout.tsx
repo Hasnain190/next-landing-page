@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TransitionProvider children={children} />;
+        <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
   );

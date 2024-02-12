@@ -126,7 +126,10 @@ export default function About() {
               className="flex gap-4 flex-wrap"
             >
               {skillsList.map((skill) => (
-                <div className="bg-black rounded text-sm p-2 cursor-pointer text-white hover:bg-white hover:text-black hover:ring-1 hover:ring-black">
+                <div
+                  key={skill}
+                  className="bg-black rounded text-sm p-2 cursor-pointer text-white hover:bg-white hover:text-black hover:ring-1 hover:ring-black"
+                >
                   {skill}
                 </div>
               ))}

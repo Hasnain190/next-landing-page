@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
+import Image from "next/image";
 export default function Navbar() {
   const links = [
     { url: "/", title: "Home" },
@@ -69,7 +70,7 @@ export default function Navbar() {
       <div className="hidden md:flex gap-4 w-1/3">
         {socialLinks.map((link) => (
           <Link href={link.url} key={link.url} className="">
-            <img src={link.src} alt="" width={24} height={24} />
+            <Image src={link.src} alt="" width={24} height={24} />
           </Link>
         ))}
       </div>
@@ -107,8 +108,12 @@ export default function Navbar() {
             className="absolute top-0 left-0 w-screen h-screen text-white bg-black  flex flex-col items-center justify-center text-4xl gap-8 z-40"
           >
             {links.map((link) => (
-              <motion.div variants={listItemVariants} className="">
-                <Link href={link.url} key={link.url} className="">
+              <motion.div
+                variants={listItemVariants}
+                key={link.url}
+                className=""
+              >
+                <Link href={link.url} className="">
                   {link.title}{" "}
                 </Link>
               </motion.div>
