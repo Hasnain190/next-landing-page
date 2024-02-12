@@ -15,13 +15,13 @@ To get started with this project, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/nextjs-landing-page.git
+   git clone https://github.com/Hasnain190/next-landing-page/
    ```
 
 2. **Navigate into the project directory**:
 
    ```bash
-   cd nextjs-landing-page
+   cd next-landing-page
    ```
 
 3. **Install dependencies**:
